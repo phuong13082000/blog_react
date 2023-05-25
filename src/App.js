@@ -5,6 +5,7 @@ import Profile from "./pages/Profile";
 import {Title} from "./components/Title";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
 
@@ -24,6 +25,12 @@ function App() {
                     <Header/>
                     <Profile/>
                     <Footer/>
+                </>
+            }/>
+            <Route path="*" element={
+                <>
+                    <Title title="404 Not Found"/>
+                    <PageNotFound/>
                 </>
             }/>
         </Routes>
