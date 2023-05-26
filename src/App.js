@@ -1,11 +1,12 @@
 import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Profile from "./pages/Profile";
-import {Title} from "./components/Title";
+import Title from "./components/Title";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageNotFound from "./pages/PageNotFound";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
 
@@ -19,11 +20,19 @@ function App() {
                     <Footer/>
                 </>
             }/>
-            <Route path="/profile" element={
+            <Route path="/login" element={
                 <>
-                    <Title title="Homepage"/>
+                    <Title title="Login"/>
                     <Header/>
-                    <Profile/>
+                    <Login/>
+                    <Footer/>
+                </>
+            }/>
+            <Route path="/register" element={
+                <>
+                    <Title title="Register"/>
+                    <Header/>
+                    <Register/>
                     <Footer/>
                 </>
             }/>

@@ -1,0 +1,27 @@
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply mt-4 rounded-lg cursor-pointer text-3xl capitalize text-center text-white block w-full bg-blue-600 hover:text-black pt-5 pr-12 pl-12 pb-5;
+}
+
+.option-btn{
+    @apply mt-4 rounded-lg cursor-pointer text-3xl capitalize text-center text-white block w-full bg-orange-600 hover:text-black pt-5 pr-12 pl-12 pb-5;
+}
+
+.box {
+    @apply overflow-hidden rounded-lg bg-white p-8;
+    border: .2rem solid black;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.heading {
+    @apply mb-[2rem] text-center text-black capitalize;
+    font-size: 4rem;
+}
+
+@media (max-width: 450px) {
+    .heading {
+        font-size: 3rem;
+    }
+}
